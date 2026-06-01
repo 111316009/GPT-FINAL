@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A級專題展示版｜GPT 深度學習演算法學習成果</title>
+<style>
+:root{
+--bg:#0b1020;
+--card:#ffffff;
+--primary:#2563eb;
+--secondary:#60a5fa;
+--text:#1e293b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:"Microsoft JhengHei",sans-serif;
+background:#f8fafc;
+color:var(--text);
+}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:
+radial-gradient(circle at 20% 20%, rgba(96,165,250,.3), transparent 30%),
+radial-gradient(circle at 80% 80%, rgba(37,99,235,.25), transparent 30%),
+linear-gradient(135deg,#020617,#0f172a,#1e3a8a);
+color:white;
+}
+.hero h1{font-size:5rem}
+.hero p{font-size:1.2rem}
+.badge{
+display:inline-block;
+padding:10px 20px;
+border:1px solid rgba(255,255,255,.4);
+border-radius:999px;
+margin-bottom:20px;
+}
+nav{
+position:sticky;
+top:0;
+background:rgba(15,23,42,.95);
+padding:12px;
+z-index:999;
+}
+nav ul{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+list-style:none;
+}
+nav a{color:white;text-decoration:none}
+.container{max-width:1200px;margin:auto;padding:40px 20px}
+.section{
+background:white;
+border-radius:20px;
+padding:35px;
+margin-bottom:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+.section h2{
+color:var(--primary);
+margin-bottom:20px;
+border-left:6px solid var(--primary);
+padding-left:12px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+padding:20px;
+border-radius:15px;
+background:#f8fafc;
+border-top:5px solid var(--primary);
+}
+.timeline{
+position:relative;
+padding-left:30px;
+}
+.timeline:before{
+content:'';
+position:absolute;
+left:8px;
+top:0;
+bottom:0;
+width:4px;
+background:var(--primary);
+}
+.timeline-item{margin-bottom:25px}
+.flow{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:10px;
+}
+.step{
+background:var(--primary);
+color:white;
+padding:15px;
+border-radius:12px;
+font-weight:bold;
+}
+.compare{
+width:100%;
+border-collapse:collapse;
+}
+.compare th,.compare td{
+border:1px solid #ddd;
+padding:12px;
+}
+.compare th{
+background:#2563eb;
+color:white;
+}
+footer{
+background:#0f172a;
+color:white;
+padding:40px;
+text-align:center;
+}
+@media(max-width:768px){
+.hero h1{font-size:2.8rem}
+.flow{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div>
+<div class="badge">AI 深度學習期末成果展示</div>
+<h1>GPT</h1>
+<h2>Generative Pre-trained Transformer</h2>
+<br>
+<p>學號：111316009</p>
+<p>姓名：高偉傑</p>
+</div>
+</section>
+
+<nav>
+<ul>
+<li><a href="#intro">演算法介紹</a></li>
+<li><a href="#learning">學習紀錄</a></li>
+<li><a href="#verify">查證</a></li>
+<li><a href="#flow">流程圖</a></li>
+<li><a href="#timeline">發展史</a></li>
+<li><a href="#compare">版本比較</a></li>
+<li><a href="#reflection">反思</a></li>
+</ul>
+</nav>
+
+<div class="container">
+
+<section class="section" id="intro">
+<h2>1. GPT 演算法介紹</h2>
+<div class="grid">
+<div class="card"><h3>什麼是 GPT？</h3><p>GPT 是 OpenAI 開發的大型語言模型，能理解並生成自然語言。</p></div>
+<div class="card"><h3>解決問題</h3><p>問答、翻譯、摘要、創作與程式設計。</p></div>
+<div class="card"><h3>應用領域</h3><p>教育、商業、客服、研究與內容創作。</p></div>
+</div>
+</section>
+
+<section class="section" id="learning">
+<h2>2. AI 輔助學習紀錄</h2>
+<div class="timeline">
+<div class="timeline-item"><b>提問一：</b>GPT 和搜尋引擎有什麼不同？<br>我的理解：GPT 可直接整理資訊並互動。</div>
+<div class="timeline-item"><b>提問二：</b>GPT 如何學習語言？<br>我的理解：透過大量資料訓練學習文字規律。</div>
+<div class="timeline-item"><b>提問三：</b>GPT 有哪些限制？<br>我的理解：可能產生錯誤資訊，需要查證。</div>
+</div>
+</section>
+
+<section class="section" id="verify">
+<h2>3. 查證與修正</h2>
+<p>我透過 OpenAI 官方資料確認 GPT 為 OpenAI 開發的大型語言模型。</p>
+<p>查證後發現 AI 並非永遠正確，因此必須搭配資料來源驗證。</p>
+</section>
+
+<section class="section" id="flow">
+<h2>4. GPT 運作流程圖</h2>
+<div class="flow">
+<div class="step">輸入問題</div>➜
+<div class="step">語意分析</div>➜
+<div class="step">知識推理</div>➜
+<div class="step">預測文字</div>➜
+<div class="step">產生回應</div>
+</div>
+</section>
+
+<section class="section" id="timeline">
+<h2>5. GPT 發展時間軸</h2>
+<div class="timeline">
+<div class="timeline-item"><b>2018 GPT-1</b>：首次提出 GPT 概念。</div>
+<div class="timeline-item"><b>2019 GPT-2</b>：生成能力大幅提升。</div>
+<div class="timeline-item"><b>2020 GPT-3</b>：1750 億參數，引起全球關注。</div>
+<div class="timeline-item"><b>2023 GPT-4</b>：更強推理能力。</div>
+<div class="timeline-item"><b>2025 GPT-5</b>：更進一步提升推理與工具整合能力。</div>
+</div>
+</section>
+
+<section class="section" id="compare">
+<h2>6. GPT 版本比較</h2>
+<table class="compare">
+<tr><th>版本</th><th>特色</th></tr>
+<tr><td>GPT-3</td><td>優秀文字生成能力</td></tr>
+<tr><td>GPT-4</td><td>推理能力提升、支援多模態</td></tr>
+<tr><td>GPT-5</td><td>更強推理、工具整合與可靠性</td></tr>
+</table>
+</section>
+
+<section class="section" id="reflection">
+<h2>7. 學習反思</h2>
+<p>透過本次研究，我了解 GPT 不只是聊天工具，而是一種能理解與生成自然語言的深度學習模型。AI 幫助我快速整理知識與理解概念，但也讓我意識到資料查證的重要性。未來我會將 AI 視為學習夥伴，而不是直接複製答案的工具。</p>
+</section>
+
+</div>
+
+<footer>
+<h3>GPT 深度學習演算法學習成果網站</h3>
+<p>111316009｜高偉傑</p>
+</footer>
+
+</body>
+</html>
